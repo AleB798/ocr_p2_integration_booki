@@ -1,0 +1,120 @@
+/* GLOBAL CSS */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', Verdana, Tahoma, sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto; 
+    color: #000000; 
+}
+
+/* ----HEADER---- */
+
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 48px;
+}
+
+.logo {
+    width: 61px;
+    height: 19px;
+}
+
+/* Navbar/Standard */
+.navbar li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.navbar li a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;    
+}
+
+/* Navbar/Hover */
+.navbar li a:hover {
+    font-weight: 500;
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+    cursor: default;
+    padding-top: 48px;
+}
+
+/* ----MAIN---- */
+
+.infobar {
+    margin-top: 48px;
+}
+
+.infobar h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.infobar p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 8px;
+}
+
+/* ----FOOTER---- */
+
+.footer {
+    height: 225px;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px
+}
+
+.footer ul {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer ul h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 48px;
+}
+
+.footer ul li {
+    list-style-type: none;
+}
+
+.footer li a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #000000;    
+}
+
