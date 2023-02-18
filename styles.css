@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Raleway', Verdana, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -20,6 +20,10 @@ h2 {
     font-size: 22px;
 }
 
+.euro {
+    font-weight: bolder;
+}
+
 /* ----HEADER---- */
 
 .main-header {
@@ -28,7 +32,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 48px;
+    padding: 48px 5px 0px 5px;
 }
 
 .logo {
@@ -40,7 +44,8 @@ h2 {
 .navbar li {
     display: inline-block;
     padding-top: 10px;
-    padding-left: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
     list-style-type: none;
 }
 
@@ -52,7 +57,7 @@ h2 {
     line-height: 19px;
     text-decoration: none;
     text-align: center;
-    color: #000000;  
+    color: #000000;
 }
 
 /* Navbar/Hover */
@@ -65,26 +70,25 @@ h2 {
 
 /* ----MAIN---- */
 
-/* --SECTION INFOBAR-- */
+main {
+    padding: 0px 5px;
+}
 
+/* --SECTION INFOBAR-- */
 #infobar {
     margin-top: 48px;
 }
 
 #infobar h1 {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
 }
 
 #infobar p {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    padding-top: 12px;
+    margin-top: 12px;
 }
 
 /* FORM */
@@ -133,37 +137,41 @@ input {
 
 /* FILTERS */
 #filters {
-    margin-top: 22px;
+    margin-top: 32px;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
     flex-wrap: wrap;
-    font-weight: 700;
-    font-size: 17px;
 }
 
 #filters p {
     font-weight: 700;
     font-size: 18px;
+    margin-right: 40px;
 }
 
-#filters div {
+.container_filters {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.filters_btn {
+    font-weight: 700;
+    font-size: 17px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 40px;
     gap: 12px;
-    height: 48px;
+    height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px; 
-    padding: 4px 20px;  
+    padding: 0px 20px;  
 }
 
 #filters i {
     color: #0065FC;
 }
-
-#filters div:hover {
+.filters_btn:hover {
     background: #DEEBFF; 
     cursor: pointer;
 }
@@ -187,27 +195,22 @@ input {
 }
 
 #info p {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
 }
 
 /* --SECTION HEBERGEMENTS-- */
 .offers {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 32px;
     width: 100%;
-    height: 626px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* OFFERS */
 #main_offers {
-    width: 65%;
-    height: 626px;
+    width: 66%;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
@@ -215,21 +218,17 @@ input {
 
 .main_cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
     flex-wrap: wrap;
-    gap: 5%;
-    width: 100%;
-    margin-top: 5px;
 }
 
 .mcards_content {
     width: 30%;
-    height: 199px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     background-color: #FFFFFF;
     margin-top: 30px;
+    padding: 5px;
 }
 
 .mcards_content:hover {
@@ -240,14 +239,12 @@ input {
     width: 100%;
     height: 120px;
     object-fit: cover;
-    border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 }
 
 .card_details {
     width: 100%;
-    height: 79px;
-    padding-left: 15px;
+    padding: 5px 5px 5px 11px;
 }
 
 .card_details h4 {
@@ -276,7 +273,6 @@ input {
     border: none;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
     background: none;
     cursor: pointer;
 }
@@ -284,42 +280,59 @@ input {
 /*  SPONSO */
 #sponsored {
     width: 30%;
-    height: 626px;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
 }
 
+#sponso_title_icon {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.fa-chart-line {
+    color:#0065FC
+}
+
 .sponso_cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
+    margin-top: 30px;
+    gap: 30px;
 }
 
 .scards_content {
     display: flex;
-    width: 100%px;
-    height: 144px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     background-color: #FFFFFF;
-    margin-top: 30px;
+    padding: 5px;
+    width: 100%;
 }
 
-.scards_content img {
+.scards_content:hover {
+    cursor: pointer;
+}
+
+.sponso_img {
     width: 40%;
+    height: 144px;
+}
+
+.sponso_img img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0px 0px 20px;    
 }
 
 .sp_card_details {
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    height: 100%;
-    padding: 15px;
-    border: 5px solid #FFFFFF;
+    padding: 15px 5px 0px 20px;
 }
 
 .sp_card_details h4 {
@@ -331,13 +344,13 @@ input {
 .sp_card_details p {
     font-weight: 400;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 24px;
 }
 
 .sp_stars {
-    position: absolute;
-    bottom: 5%;
+    align-items: flex-end;   
 }
+
 .sp_stars i {
     font-size: 10px;
     color: #0065FC;
@@ -346,11 +359,12 @@ input {
 .sp_stars i:nth-child(0n+5) {
     color: #F2F2F2;
 }
+
 /* --SECTION ACTIVITIES-- */
 #activities {
     margin-top: 52px;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 #activities_cards {
@@ -362,10 +376,13 @@ input {
 
 .activity_card {
     width: 23%;
-    height: 445px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     background-color: #FFFFFF;
+}
+
+.activity_card:hover {
+    cursor: pointer;
 }
 
 .activity_card img {
@@ -380,46 +397,265 @@ input {
     height: 55px;
     font-weight: 700;
     font-size: 16px;
-    padding-top: 15px;
+    line-height: 19px;
     padding-left: 19px;
+    align-items: center;
+    display: flex;
 }
 
 /* ----FOOTER---- */
-
-.footer {
-    height: 225px;
+#footer {
     background: #F2F2F2;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
     margin-top: 32px;
+    padding: 30px 70px;
+    justify-content: space-between;
 }
 
-.footer ul {
-    display: inline-block;
-    text-decoration: none;
+#footer div {
+    width: 30%;  
 }
 
-.footer ul h3 {
-    font-family: 'Raleway';
-    font-style: normal;
+#footer h3 {
     font-weight: 700;
     font-size: 18px;
     line-height: 48px;
 }
 
-.footer ul li {
+#footer ul {
+    display: inline-block;
+    padding-left: 0;
+}
+
+#footer ul li {
     list-style-type: none;
 }
 
-.footer li a {
-    font-family: 'Raleway';
-    font-style: normal;
+#footer li a {
     font-weight: 400;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 32px;
     text-decoration: none;
     color: #000000;    
+}
+
+
+
+/* -----------------MEDIA QUERIES-----------------*/
+
+/*-----TABLETTE-----*/
+@media screen and (max-width: 991px) {
+
+    #filters {
+        gap: 15px;
+    }
+
+    .container_filters {
+        gap: 20px;
+    }
+
+    #filters p {
+        margin-right: 20px;
+    }
+
+    .filters_btn {
+        font-size: 15px;
+    }
+
+    /*--OFFERS--*/
+    .offers {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /*--MAIN OFFERS--*/
+    #main_offers {
+        width: 100%;
+    }
+
+    /*--SPONSO OFFERS--*/
+    #sponsored {
+        width: 100%;
+        margin-top: 52px;
+    }
+
+    .sponso_cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .sponso_img {
+    width: 40%;
+    height: auto;
+    }
+
+    .sponso_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;    
+    }
+
+}
+
+/*-----MOBILE-----*/
+@media screen and (max-width: 767px) {
+
+    /*--HEADER--*/
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: 48px;
+        padding-bottom: 20px;
+        }
+
+    /* Navbar/Standard */
+    .navbar {
+        display: flex;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .navbar ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar li {
+        text-align: center;
+        width: 50%;
+        padding: 0;
+    }
+
+    .navbar li a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Navbar/Hover */
+    .navbar li a:hover {
+        color: #0065FC;
+        border-top: none;
+        padding-top: 0px;
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 10px;
+    }
+
+
+    /*--FILTERS--*/
+
+    .filters_btn {
+        font-size: 11px;
+        gap: 6px;
+        display: flex;
+        align-items: center;
+        width: 45%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container_filters {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /*--OFFERS--*/
+
+    .offers {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    } 
+
+    #main_offers {
+        width: 100%;
+        height: auto;
+        background-color: #FFFFFF;
+        padding: 30px 10px;
+    }
+
+    .main_cards {
+        flex-direction: column;        
+    }
+
+    .mcards_content {
+        width: 100%;
+        height: 199px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        margin-top: 30px;
+    }
+
+        /*--SPONSORED--*/
+    #sponsored {
+        width: 100%;
+        margin-top: 30px;
+        }
+
+    .sponso_cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sponso_img {
+        width: 40%;
+        height: 144px;
+    }
+    
+    .sponso_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px 0px 0px 20px;    
+    }
+
+        /*--ACTIVITIES--*/
+
+    #activities {
+        margin: 90px 0px;
+        height: auto;
+    }
+
+    #activities_cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .activity_card {
+        width: 100%;
+        height: 190px;
+    }
+
+    .activity_card img {
+        height: 135px;
+    }
+
+        /*--FOOTER--*/
+
+    #footer {
+        flex-direction: column ;
+        padding: 30px 70px;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    #footer div {
+        width: 100%;  
+        margin-top: 30px;
+    }
 }
 
